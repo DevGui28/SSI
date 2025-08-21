@@ -126,7 +126,7 @@ main {
  /* --- SEÇÃO HERO (TODAS AS PÁGINAS) --- */
 
 .hero {
-    background-image: linear-gradient(rgba(10, 34, 64, 0.5), rgba(10, 34, 64, 0.5)), url('../img/TRE.jpg');
+    background-image: linear-gradient(rgba(10, 34, 64, 0.5), rgba(10, 34, 64, 0.5)), url('../img/TRE-logo 2025.png');
     background-size: cover;
     background-position: center;
     /* CORREÇÃO: Usa 'vh' para altura relativa e 'min-height' para garantir um tamanho mínimo */
