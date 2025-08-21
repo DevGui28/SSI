@@ -42,12 +42,16 @@ header {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
     color: var(--cor-texto-claro);
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.logo-text-desktop {
+    display: none; /* Esconde o texto "TRE-PR |" em ecrãs pequenos */
 }
 
 .logo img {
@@ -254,6 +258,12 @@ main {
 .acesso-rapido .botoes-container .btn:hover {
     background-color: var(--cor-primaria);
     color: var(--cor-texto-claro);
+}
+
+/* CORREÇÃO PARA OS BOTÕES TEREM O MESMO TAMANHO */
+.botoes-container-vertical .btn {
+    width: 350px; /* Define uma largura fixa */
+    max-width: 100%; /* Garante que não ultrapasse a tela em dispositivos pequenos */
 }
 
 .botoes-container, .botoes-container-vertical {
