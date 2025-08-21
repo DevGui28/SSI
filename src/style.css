@@ -1,0 +1,428 @@
+/* --- GERAL E VARIÁVEIS --- */
+:root {
+    --cor-primaria: #0A2240; /* Azul escuro */
+    --cor-secundaria: #F0F4F8; /* Cinza claro de fundo */
+    --cor-destaque: #BFA15A; /* Dourado/Ouro */
+    --cor-texto: #333;
+    --cor-texto-claro: #FFFFFF;
+    --cor-borda: #e0e0e0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- CABEÇALHO E NAVEGAÇÃO --- */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px; /* Altura da imagem do logo */
+    margin-right: 0px; /* Espaço entre a imagem e o texto */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--cor-destaque);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--cor-texto-claro);
+}
+
+/* --- ESTILOS DE PÁGINA --- */
+main {
+    min-height: calc(100vh - 180px); /* Altura da tela menos header e footer */
+}
+
+.page-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.obs-text {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* --- SEÇÃO HERO (APENAS NA HOME) --- */
+/* .hero {
+    background-image: linear-gradient(rgba(10, 34, 64, 0.8), rgba(10, 34, 64, 0.8)), url('https://placehold.co/1920x1080/0A2240/FFFFFF?text=Imagem+Abstrata');
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 100px 20px;
+} */
+ /* --- SEÇÃO HERO (TODAS AS PÁGINAS) --- */
+.hero {
+    /* CORREÇÃO: Adicionado ../ antes do nome da imagem */
+    background-image: linear-gradient(rgba(10, 34, 64, 0.5), rgba(10, 34, 64, 0.5)), url('../img/TRE-logo 2025.png');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    color: var(--cor-texto-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* --- CABEÇALHO DAS PÁGINAS INTERNAS --- */
+.page-header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* --- SEÇÕES E CARDS --- */
+.home-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: var(--cor-primaria);
+}
+
+.alert-section {
+    background-color: #fdfae1;
+    border-left: 5px solid var(--cor-destaque);
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.alert-section h3 {
+     margin-top: 0;
+     color: var(--cor-primaria);
+}
+
+.grid-container, .grid-container-3-cols {
+    display: grid;
+    gap: 30px;
+}
+.grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.grid-container-3-cols {
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.card, .content-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card {
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card .icon {
+    font-size: 3em;
+    color: var(--cor-destaque);
+}
+
+.card h3 {
+    color: var(--cor-primaria);
+    margin-top: 15px;
+}
+
+.content-card {
+    margin-bottom: 30px;
+}
+
+.content-card h2 {
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-destaque);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- BOTÕES --- */
+.acesso-rapido {
+    text-align: center;
+}
+
+/* Adicionado para que todos os botões na "Central de Ações" tenham o estilo de contorno */
+.acesso-rapido .botoes-container .btn {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+}
+
+/* Adicionado para o efeito hover correspondente */
+.acesso-rapido .botoes-container .btn:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+}
+
+.botoes-container, .botoes-container-vertical {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.botoes-container-vertical {
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #081c33;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+     background-color: transparent;
+     color: var(--cor-primaria);
+     border-color: var(--cor-primaria);
+}
+
+.btn-outline:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+}
+
+/* --- ACCORDION (PARA PROTOCOLOS) --- */
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.accordion-header {
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.accordion-header:hover {
+    background-color: var(--cor-secundaria);
+}
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+.accordion-content ul {
+    list-style: none;
+    padding: 0;
+}
+.accordion-content li {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cor-borda);
+}
+.accordion-content li:last-child {
+    border-bottom: none;
+}
+.accordion-content a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+.accordion-content a:hover {
+    color: var(--cor-destaque);
+}
+
+
+/* --- PÁGINA DE CONTATO --- */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.contact-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.contact-card.emergency {
+    background-color: #fffbe6;
+    border: 2px solid var(--cor-destaque);
+}
+.contact-card h3 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+}
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.highlight-box {
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-destaque);
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: var(--cor-primaria);
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer p {
+    margin: 5px 0;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 70px; /* Altura do header */
+        left: 0;
+        background-color: var(--cor-primaria);
+        padding: 10px 0;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero h1, .page-header h1 {
+        font-size: 2.2em;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
