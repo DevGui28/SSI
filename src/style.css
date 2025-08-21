@@ -114,6 +114,7 @@ main {
 }
 
 /* --- SEÇÃO HERO (APENAS NA HOME) --- */
+/*  */
 /* .hero {
     background-image: linear-gradient(rgba(10, 34, 64, 0.8), rgba(10, 34, 64, 0.8)), url('https://placehold.co/1920x1080/0A2240/FFFFFF?text=Imagem+Abstrata');
     background-size: cover;
@@ -123,6 +124,7 @@ main {
     padding: 100px 20px;
 } */
  /* --- SEÇÃO HERO (TODAS AS PÁGINAS) --- */
+
 .hero {
     background-image: linear-gradient(rgba(10, 34, 64, 0.5), rgba(10, 34, 64, 0.5)), url('../img/TRE.jpg');
     background-size: cover;
@@ -139,19 +141,26 @@ main {
 
 .hero-content {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 20px; /* auto */
 }
 
 .hero h1 {
+    /* font-size: 3em;
+    margin: 0;
+    font-weight: 700;*/
     font-size: 3em;
     margin: 0;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-size: 1.2em;
+    /* font-size: 1.2em;
     font-style: italic;
+    margin-top: 10px; */
+    font-size: 1.2em;
     margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5):
 }
 
 /* --- CABEÇALHO DAS PÁGINAS INTERNAS --- */
