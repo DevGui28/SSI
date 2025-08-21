@@ -147,19 +147,12 @@ main {
     font-size: 3em;
     margin: 0;
     font-weight: 700;
-    /* font-size: 3em;
-    margin: 0;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .hero p {
     font-size: 1.2em;
     font-style: italic;
     margin-top: 10px;
-    /* font-size: 1.2em;
-    margin-top: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5): */
 }
 
 /* --- CABEÇALHO DAS PÁGINAS INTERNAS --- */
