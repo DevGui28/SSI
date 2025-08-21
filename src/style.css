@@ -126,12 +126,12 @@ main {
  /* --- SEÇÃO HERO (TODAS AS PÁGINAS) --- */
 
 .hero {
+    /* ALTERADO: O nome da imagem foi atualizado para 'TRE-logo 2025.png' */
     background-image: linear-gradient(rgba(10, 34, 64, 0.5), rgba(10, 34, 64, 0.5)), url('../img/TRE-logo 2025.png');
     background-size: cover;
     background-position: center;
-    /* CORREÇÃO: Usa 'vh' para altura relativa e 'min-height' para garantir um tamanho mínimo */
-    height: 50vh; /* A altura será 50% da altura da janela do navegador */
-    min-height: 350px; /* Garante que nunca seja menor que 350px */
+    height: 50vh; 
+    min-height: 350px; 
     color: var(--cor-texto-claro);
     display: flex;
     justify-content: center;
