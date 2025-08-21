@@ -266,6 +266,14 @@ main {
     max-width: 100%; /* Garante que não ultrapasse a tela em dispositivos pequenos */
 }
 
+/* CORREÇÃO PARA CENTRALIZAR BOTÕES VERTICAIS */
+.botoes-container-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os botões horizontalmente */
+    gap: 15px;
+}
+
 .botoes-container, .botoes-container-vertical {
     display: flex;
     justify-content: center;
