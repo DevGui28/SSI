@@ -140,26 +140,26 @@ main {
 
 .hero-content {
     max-width: 900px;
-    margin: 0 20px; /* auto */
+    margin: 0 auto; /* auto */
 }
 
 .hero h1 {
-    /* font-size: 3em;
-    margin: 0;
-    font-weight: 700;*/
     font-size: 3em;
     margin: 0;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .hero p {
-    /* font-size: 1.2em;
-    font-style: italic;
-    margin-top: 10px; */
     font-size: 1.2em;
+    font-style: italic;
     margin-top: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5):
+    /* font-size: 1.2em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5): */
 }
 
 /* --- CABEÇALHO DAS PÁGINAS INTERNAS --- */
